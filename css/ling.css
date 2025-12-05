@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+}
+
+.main{
+    width: 1420px;
+    height: 1080px;
+    border: dashed 2px red;
+    margin: 0 auto;
+} 
+.head{
+    width: 1420px;
+    height: 70px;
+    display: flex;
+    background-color: #dae6e9;
+    border: solid 2px blue;
+}
+.logo{
+    width: 200px;
+    height: 70px;
+    border: solid 2px green;
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+    display: flex;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+.menu{
+    width: 1220px;
+    height: 70px;
+    border: solid 2px orange;
+    text-align: center;
+}
+.menu a {
+    padding-bottom: 40px;
+    margin: 0 15px;
+    border: dashed 2px green;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu a.chromer {
+    color: white;
+    background-color:#31c27c;
+    padding: 20px 20px 40px 20px; 
+}
+.menu input[type="text"] {
+    width: 300px;
+    height: 30px;
+    margin-left: 50px;
+    border: solid 2px gray;
+    border-radius: 15px;
+    padding-left: 10px;
+    font-size: 16px;
+} 
+/* 歌单推荐 */
+.recommend{
+    width: 1420px;
+    height: 480px;
+    background-color: #f3f3f3;
+    border: solid 2px purple;
+}
+.recommend .top{
+    width: 1420px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 5px;
+    border: solid 2px brown;
+}
+.recommend img{
+    width: 200px;
+    height: 200px;
+}
+.span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 宋体;
+}
+.span span{
+    border: solid 2px black;
+    margin-right: 50px;
+}
+.tags{
+    width: 1420px;
+    height: 480px;
+    border: solid 2px pink;
+}
+.tags div{
+    width: 200px;
+    height: 300px;
+    float: left;
+    margin: 20px 40px;
+    text-align: left;
+    border: solid 2px pink;
+    margin-top: 50px;
+}
+.tags p{
+    font-size: 15px;
+    border-bottom: solid 1px gray;
+    margin-top: 10px;
+}
+.tags span{
+    font-size: 14px;
+    color: gray;
+}
+
+.newsong{
+    width: 1420px;
+    height: 520px;
+    border: solid 2px cyan;
+}
+.newsong .header{
+    width: 1420px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 5px;
+    border: solid 2px brown;
+}
+.newsong .span{
+    border: solid 2px black;
+    font-size: 15px;
+}
+.newsong img{
+    width: 65px;
+    height: 65px;
+}
+.color{
+    color: #00bfff;
+}
+.sing{
+    width: 1420px;
+    border: solid 2px lime;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.song-item {
+  width: calc(33.333% - 20px); /* 每行3个，减去间距 */
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  padding-top: -10px;
+  border: 8px solid #eee; 
+}
+
+.song-item p{
+    font-size: 16px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.song-item span{
+    font-size: 14px;
+    margin-left: 5px;
+    color: gray;
+}
+/* 页尾 */
+.foot{
+    text-align: center;
+    font-size: 12px;
+    color: #7a6f6f;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-top: 20px;
+}
