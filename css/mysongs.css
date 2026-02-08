@@ -1,37 +1,209 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #f0f8ff;
 }
-div.main{
+
+div.main {
     width: 1420px;
     height: 1080px;
-    border: solid 1px #b7c4ca ;
     margin: 0 auto;
 }
+
 /* 头部 */
-nav{
+nav {
     width: 1420px;
     height: 120px;
-    border: solid 2px #000 ;
+    background: rgb(238, 241, 241);
 }
-nav h1{
+
+nav img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    /*保持原有比例 */
+    float: left;
+    border: 4px solid #f0f0f0;
+}
+
+nav input[type="text"] {
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    float: right;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+nav h1 {
     font-size: 35px;
-    padding-top:1px ;
+    padding-top: 1px;
     font-weight: bold;
-    border: dashed 2px #000 ;
+    /* 加粗 */
+    color: green;
 }
-nav span{
+
+nav span {
     font-size: 20px;
-    border: solid 2px #000 ;
     float: left;
     padding-top: 5px;
     margin-right: 20px;
 }
-nav p{
+
+nav p {
     font-size: 12px;
-    border: dashed 2px #000 ;
     color: rgb(58, 22, 22);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: rgb(31, 90, 19);
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    float: right;
+    color: #fff;
+    background: #15c9a2;
+}
+
+button text {
+    font-size: 14px;
+    color: #fff;
+}
+
+button:hover {
+    background: #13b894;
+}
+
+button img {
+    width: 30px;
+    height: 30px;
+    margin-right: -10px;
+}
+
+/* 歌单 */
+
+main {
+    width: 1420px;
+    height: 800px;
+    background: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.tag {
+    width: 1420px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
+    color: #837d7d;
+}
+
+.tag.song {
+    flex-grow: 5;
+    justify-content: flex-start;
+    /* 左对齐 */
+}
+
+.tag.singer {
+    flex-grow: 3;
+    justify-content: center;
+    /* 居中对齐 */
+    margin-left: 10px;
+}
+
+.tag.duration {
+    flex-grow: 2;
+    justify-content: flex-end;
+    /* 右对齐 */
+    margin-right: 10px;
+}
+
+.tag span {
+    margin-right: 650px;
+}
+
+/* 绿 */
+.sing {
+    height: 40px;
+    background: #15c9a2;
+    display: flex;
+    font-size: 14px;
+    font-family: 微软雅黑;
+}
+
+.sing.song {
+    flex-grow: 5;
+    justify-content: flex-start;
+    padding-top: 8px;
+}
+
+.sing.singer {
+    flex-grow: 3;
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+.sing.duration {
+    flex-grow: 2;
+    justify-content: flex-end;
+    /* 右对齐 */
+    padding-top: 8px;
+}
+
+/*灰*/
+.dance {
+    height: 40px;
+    background: #5b9689;
+    display: flex;
+    font-size: 14px;
+    font-family: 微软雅黑;
+}
+
+.dance.song {
+    flex-grow: 5;
+    justify-content: flex-start;
+    /* 左对齐 */
+    padding-top: 8px;
+}
+
+.dance.singer {
+    flex-grow: 3;
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+.dance.duration {
+    flex-grow: 2;
+    justify-content: flex-end;
+    padding-top: 8px;
+}
+
+/* 尾部 */
+footer {
+    width: 1420px;
+    height: 160px;
+    text-align: center;
+    background: rgb(238, 241, 241);
 }

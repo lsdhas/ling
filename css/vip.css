@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    width: 1420px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.tag {
+    width: 100%;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 12px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.main-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-height: calc(100% - 200px);
+}
+
+/* 表格样式 */
+.vip-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.vip-table th,
+.vip-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.vip-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #555;
+    letter-spacing: 0.5px;
+}
+
+.vip-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.vip-table th:first-child,
+.vip-table td:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+
+/* 会员卡片样式 */
+.vip-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    /* 调整卡片之间的间距 */
+    margin-top: 20px;
+}
+
+.vip-card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.vip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* 不同会员等级的颜色 */
+.vip-card.vip {
+    background-color: #e3f2fd;
+    border: 2px solid #2196f3;
+}
+
+.vip-card.vvip {
+    background-color: #e8f5e8;
+    border: 2px solid #4caf50;
+}
+
+.vip-card.svip {
+    background-color: #fff3e0;
+    border: 2px solid #ff9800;
+}
+
+.vip-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* 价格 */
+.vip-card .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.vip-card.vip .price {
+    color: #2196f3;
+}
+
+.vip-card.vvip .price {
+    color: #4caf50;
+}
+
+.vip-card.svip .price {
+    color: #ff9800;
+}
+
+/* 购买按钮 */
+.vip-card button {
+    background-color: #667eea;
+    color: white;
+    border: 2px solid #667eea;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.vip-card button:hover {
+    background-color: #764ba2;
+}
+
+/* 页尾 */
+footer {
+    width: 1420px;
+    height: 100px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    /* 阴影效果 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
